@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_room"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:tint="@color/white"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Back Button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="ADD ROOMS"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/AddPhoto"
+        android:layout_width="340dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/add_photo"
+        android:backgroundTint="#7E7979"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="340dp"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/AddPhoto"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#161616"
+        android:padding="20dp"
+        android:strokeColor="#00E6FF"
+        android:strokeWidth="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editRoomName"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:hint="Enter Room Name"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textColorHint="#CCCCCC"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:elevation="5dp"/>
+
+
+            <EditText
+                android:id="@+id/editRoomPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Price (₱)"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textColorHint="#CCCCCC"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal"
+                android:elevation="5dp"/>
+
+            <EditText
+                android:id="@+id/editRoomFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Enter Room Features"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textColorHint="#CCCCCC"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:elevation="5dp"/>
+
+
+            <EditText
+                android:id="@+id/editRoomAmenities"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Enter Room Amenities"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textColorHint="#CCCCCC"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:elevation="5dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/AddRoomBtn"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:text="Add Room"
+            android:layout_below="@+id/cardView"
+            android:textColor="#F44336"
+            android:drawableLeft="@drawable/add"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1A1A1A"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

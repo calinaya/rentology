@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AnalysisActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Grid Layout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+        <!-- Total Rooms -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_home"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Total Rooms"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_rooms"
+                android:text="00"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <!-- Available Rooms -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_available"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Available Rooms"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_available_rooms"
+                android:text="00"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <!-- Occupied Rooms -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_occupied"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Occupied Rooms"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_occupied_rooms"
+                android:text="00"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <!-- Male Renters -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_male"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Male Renters"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_male"
+                android:text="00"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <!-- Female Renters -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_female"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Female Renters"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_female"
+                android:text="00"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <!-- Total Renters -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_renters"
+                android:tint="@color/white"/>
+
+            <TextView
+                android:text="Total Renters"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_total_renters"
+                android:text="10dp"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</RelativeLayout>

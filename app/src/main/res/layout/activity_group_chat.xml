@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/chatBackground"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b3"
+        android:alpha="0.3"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#040404"
+        android:elevation="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="15dp">
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Back Button"
+            android:src="@drawable/arrow_back"
+            android:tint="@color/white"
+            android:background="@drawable/glow_circle_effect"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp"/>
+
+
+        <ImageView
+            android:id="@+id/chatIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/Chat"
+            android:tint="#FF3C3C"
+            android:layout_marginEnd="8dp"/>
+
+
+        <TextView
+            android:id="@+id/chatTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROUP CHAT"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#FF3C3C"
+            android:shadowRadius="6"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/neon_separator"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chatTitle"
+        android:layout_above="@+id/messageInputContainer"
+        android:padding="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Chat bubbles will be dynamically added here -->
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/messageInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/input_container_bg"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="@drawable/input_field_bg"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:inputType="textCapSentences"/>
+
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/send"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/send_button_glow"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/gradient_bg">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/g"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/b3"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RENTOLOGY"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="110dp"
+        android:shadowColor="#233DDB"
+        android:shadowRadius="8"/>
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor, Manage, and Connect with Renters"
+        android:textColor="#DDDDDD"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/appTitle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="35dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:text="Bahay ni Lola"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="casual"/>
+
+
+    <ImageButton
+        android:id="@+id/Logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/logout"
+        android:background="@drawable/circle_background"/>
+
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/bg2"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="405dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="447dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true"
+        android:elevation="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnRooms"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Rooms"
+            android:textSize="18dp"
+            android:backgroundTint="#C11005"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="220dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View and manage \nroom details."
+            android:textColor="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnAnalytics"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Analytics"
+            android:textSize="18dp"
+            android:backgroundTint="#C11005"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track rental \nperformance."
+            android:textColor="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/btnGroupChat"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Renters"
+            android:textSize="18dp"
+            android:backgroundTint="#C11005"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="220dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View and manage \nrenters' details."
+            android:textColor="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnRenters"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Group Chat"
+            android:textSize="18dp"
+            android:backgroundTint="#C11005"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat with renters \neasily."
+            android:textColor="#CCCCCC"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</RelativeLayout>

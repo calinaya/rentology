@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dark Gradient Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#0A0A0A"
+                android:endColor="#1A0000"
+                android:type="linear"/>
+        </shape>
+    </item>
+
+    <!-- Subtle Neon Glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#220000" />
+        </shape>
+    </item>
+
+</layer-list>
